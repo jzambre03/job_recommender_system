@@ -58,13 +58,13 @@ cp .env-template .env
 ```
 
 ### Step 3: Add required API Key
-#### Add Rapid API KEY
+### Add Rapid API KEY
 Next, open the `.env` file in a text editor and add your Rapid API Key. This key is required for the program to function correctly. If you don't have a Rapid API Key, you can sign up for one [here](https://www.rapidapi.com/).
 
-#### Add OpenAI API KEY (Optional)
+### Add OpenAI API KEY (Optional)
 You can also add OpenAI API key to the `.env` file to get GPT based resume similarity score. This is optional feature, and currently in development, and will be available in full version soon. You can sign up for OpenAI API [here](https://platform.openai.com/apps)
 
-#### Add LinkedIn Credentials
+### Add LinkedIn Credentials
 Add your LinkedIn email and password to the .env file. These credentials are required to fetch job data directly from LinkedIn. Ensure that your credentials are kept secure and are not shared.
 
 
