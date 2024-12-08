@@ -30,7 +30,7 @@ The **Job Finder Application** helps users upload their resumes and find jobs ta
 ### 2. Install Required Libraries
 Run the following command in your terminal to install the dependencies:
 ```bash
-pip install streamlit requests pandas PyPDF2 gensim nltk scikit-learn tqdm openpyxl
+pip install -r requirements.txt
 ```
 
 ### 3. Run the Backend API
