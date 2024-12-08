@@ -1,0 +1,12 @@
+Flask
+streamlit
+requests
+selenium
+webdriver-manager
+beautifulsoup4
+nltk
+gensim
+scikit-learn
+pandas
+PyPDF2
+python-dotenv
