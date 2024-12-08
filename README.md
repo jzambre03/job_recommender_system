@@ -1,8 +1,8 @@
 
-# Job Finder Application
+# Job Recommender System Application
 
 ## Overview
-The **Job Finder Application** helps users upload their resumes and find jobs tailored to their skills and preferences. By leveraging advanced similarity scoring and external job search APIs, the app matches users with the most relevant job opportunities.
+The **Job Recommender System** helps users upload their resumes and find jobs tailored to their skills and preferences. By leveraging advanced similarity scoring and external job search APIs, the app matches users with the most relevant job opportunities.
 
 ### Key Features
 - **Resume Upload**: Users can upload their resumes in PDF or Word format.
@@ -20,20 +20,55 @@ The **Job Finder Application** helps users upload their resumes and find jobs ta
   - `gensim`, `nltk`, `scikit-learn`: Text preprocessing and similarity calculation.
   - `tqdm`: Progress tracking.
 
+
+# Installation Guide
+
+📋 This guide will walk you through the installation process for the program. Please follow the steps below to ensure a successful installation.
+
 ## Setup and Instructions
 
-### 1. Prerequisites
-- Python 3.8 or above installed.
-- Package manager `pip` installed.
-- Access to job search API services (e.g., Indeed, LinkedIn).
+### Prerequisites
 
-### 2. Install Required Libraries
+Before proceeding with the installation, please make sure you have the following prerequisites:
+- Python 3.8 or above installed.
+- Access to a Linux terminal (Mac or Ubuntu) or a WSL on Windows
+- Subscription to Rapidapi and the Linkedin Job search service: [Rapidapi](https://rapidapi.com/jaypat87/api/linkedin-jobs-search)
+
+
+### Step 0: Clone the repository and create a virtual environment and install the software.
+Clone the repository to your local environment and create the virtual environment.
+
+```bash
+conda create --name jobhunter python=3.10
+conda activate jobhunter
+pip install .
+```
+
+### Step 1: Install Required Libraries
 Run the following command in your terminal to install the dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the Backend API
+### Step 2: Copy the .env-template
+To begin, we need to copy the `.env-template` file into `.env` so that the program can work properly. Use the following command to accomplish this:
+
+```shell
+cp .env-template .env
+```
+
+### Step 3: Add required API Key
+#### Add Rapid API KEY
+Next, open the `.env` file in a text editor and add your Rapid API Key. This key is required for the program to function correctly. If you don't have a Rapid API Key, you can sign up for one [here](https://www.rapidapi.com/).
+
+#### Add OpenAI API KEY (Optional)
+You can also add OpenAI API key to the `.env` file to get GPT based resume similarity score. This is optional feature, and currently in development, and will be available in full version soon. You can sign up for OpenAI API [here](https://platform.openai.com/apps)
+
+#### Add LinkedIn Credentials
+Add your LinkedIn email and password to the .env file. These credentials are required to fetch job data directly from LinkedIn. Ensure that your credentials are kept secure and are not shared.
+
+
+### Step 4: Run the Backend API
 The backend API is assumed to be running on `http://127.0.0.1:5001`. Ensure that:
 - The API endpoint `/recommend_jobs` is operational.
 - The API processes POST requests with the following JSON payload:
@@ -54,20 +89,34 @@ To start your backend API:
 python app.py
 ```
 
-
-### 4. Run the Streamlit Frontend
+### Step 5: Run the Streamlit Frontend
 To launch the frontend:
 ```bash
 streamlit run main.py
 ```
 
+### Final Step: Hit the Run Button
 
-### 5. Usage Instructions
+ℹ️ NOTE: You can check the terminal to see the logs of the application when running.
+
+That's it! You have successfully installed the program. 
+
+🌐 You should be able to access the application in your browser by clicking [here](http://localhost:8501/).
+
+You should see the UI like this:
+
+![Alt](images/image_ui_job_search_results.png)
+
+If you encounter any issues during the installation process, please refer to the documentation or submit an issue to this repo.
+
+
+## Usage Instructions
 1. Open the app in your browser. The default URL is: `http://localhost:8501`.
 2. Upload your resume (PDF or Word format).
 3. Enter job details (e.g., title, location) and apply additional filters.
 4. Click the **"Find Jobs"** button to fetch recommendations.
 5. View the recommended jobs in a table and download the results in **CSV** or **Excel** format.
+
 
 ## Troubleshooting
 - **API Connection Issues**:
@@ -78,6 +127,7 @@ streamlit run main.py
 - **File Upload Issues**:
   - Check file permissions for uploaded resumes.
   - Verify the file format (only PDF and Word are supported).
+
 
 ## Future Enhancements
 - Add support for additional job sources like Monster and Glassdoor.
