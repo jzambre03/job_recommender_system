@@ -51,16 +51,16 @@ The backend API is assumed to be running on `http://127.0.0.1:5001`. Ensure that
 
 To start your backend API:
 ```bash
-python backend_script.py
+python app.py
 ```
-*(Replace `backend_script.py` with the name of your backend Python script.)*
+
 
 ### 4. Run the Streamlit Frontend
 To launch the frontend:
 ```bash
-streamlit run job_finder_app.py
+streamlit run main.py
 ```
-*(Replace `job_finder_app.py` with the filename of your Streamlit script.)*
+
 
 ### 5. Usage Instructions
 1. Open the app in your browser. The default URL is: `http://localhost:8501`.
