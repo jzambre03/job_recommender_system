@@ -107,10 +107,10 @@ The Job Recommender NLP application integrates both the frontend and backend fun
 
     You can now view your Streamlit app in your browser.
 
-    Local URL: http://localhost:8501
-    Network URL: http://192.168.86.250:8501
+    Local URL: http://localhost:8515
+    Network URL: http://192.168.86.250:8515
   ```
-  The app will automatically open in your default web browser. If it doesn’t, manually visit http://localhost:8501 in your browser.
+  The app will automatically open in your default web browser. If it doesn’t, manually visit http://localhost:8515 in your browser.
 
 
 ### Final Step: Hit the Run Button
@@ -129,7 +129,7 @@ If you encounter any issues during the installation process, please refer to the
 
 
 ## Usage Instructions
-1. Open the app in your browser. The default URL is: `http://localhost:8501`.
+1. Open the app in your browser. The default URL is: `http://localhost:8515`.
 2. Upload your resume (PDF or Word format).
 3. Enter job details (e.g., title, location) and apply additional filters.
 4. Click the **"Find Jobs"** button to fetch recommendations.
