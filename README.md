@@ -11,14 +11,27 @@ The **Job Recommender System** helps users upload their resumes and find jobs ta
 - **Similarity Scoring**: Matches jobs to the uploaded resume based on content similarity.
 - **Download Results**: Export recommended jobs in **CSV** or **Excel** format.
 
+### Automated Job Search Pipeline 🚀
+![Job Search Results Filtering](images/Picture1.png)
+
+### Upload Resume for AI Analysis
+![Resume Upload](images/Picture2.jpg)
+
+### Highly Configurable Job Searching 🧐
+![Job Search](images/Picture3.png)
+
 ## Technologies Used
 - **Frontend**: [Streamlit](https://streamlit.io/) for a lightweight, interactive UI.
 - **Backend**: Python Flask API (assumed running on `http://127.0.0.1:5001`).
-- **Libraries**:
-  - `requests`, `pandas`: API calls and data handling.
-  - `PyPDF2`: Extract text from PDF resumes.
-  - `gensim`, `nltk`, `scikit-learn`: Text preprocessing and similarity calculation.
-  - `tqdm`: Progress tracking.
+- **Job Search**
+  - **`requests`**: For making API calls to job platforms (e.g., LinkedIn, Indeed).
+  - **`BeautifulSoup` (from `bs4`)**: For web scraping and parsing HTML content from job listings (if applicable).
+  - **`re`**: For cleaning and extracting data from job descriptions.
+- **Resume and Job Description Similarity Scoring**:
+  - **`gensim`**: Implements Doc2Vec for vectorizing resumes and job descriptions.
+  - **`nltk`**: Provides tools for text tokenization, stopword removal, and preprocessing.
+  - **`scikit-learn`**: Used for calculating cosine similarity and other preprocessing utilities.
+  - **`PyPDF2`**: For extracting text content from PDF resumes.
 
 
 # Installation Guide
@@ -105,7 +118,7 @@ That's it! You have successfully installed the program.
 
 You should see the UI like this:
 
-![Alt](images/image_ui_job_search_results.png)
+![Alt](images/Picture4.png)
 
 If you encounter any issues during the installation process, please refer to the documentation or submit an issue to this repo.
 

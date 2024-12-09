@@ -66,7 +66,7 @@ if st.button("Find Jobs"):
                     # Select and display relevant columns
                     if not jobs_df.empty:
                         st.write("Recommended Jobs:")
-                        st.dataframe(jobs_df[["Title", "Company", "Location", "Similarity Score", "Link"]])
+                        st.dataframe(jobs_df[["Title", "Company", "Location", "Similarity Score", "Link", "Description"]])
 
                         # Save the DataFrame as CSV
                         csv_data = jobs_df.to_csv(index=False)
