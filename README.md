@@ -74,15 +74,12 @@ cp .env-template .env
 ### Add Rapid API KEY
 Next, open the `.env` file in a text editor and add your Rapid API Key. This key is required for the program to function correctly. If you don't have a Rapid API Key, you can sign up for one [here](https://www.rapidapi.com/).
 
-### Add OpenAI API KEY (Optional)
-You can also add OpenAI API key to the `.env` file to get GPT based resume similarity score. This is optional feature, and currently in development, and will be available in full version soon. You can sign up for OpenAI API [here](https://platform.openai.com/apps)
-
 ### Add LinkedIn Credentials
 Add your LinkedIn email and password to the .env file. These credentials are required to fetch job data directly from LinkedIn. Ensure that your credentials are kept secure and are not shared.
 
 
-### Step 4: Run the Backend API
-The backend API is assumed to be running on `http://127.0.0.1:5001`. Ensure that:
+### Step 4: Run the Application
+The Job Recommender NLP application integrates both the frontend and backend functionalities into a single Streamlit app. Follow the steps below to successfully run the application:
 - The API endpoint `/recommend_jobs` is operational.
 - The API processes POST requests with the following JSON payload:
   ```json
@@ -96,17 +93,34 @@ The backend API is assumed to be running on `http://127.0.0.1:5001`. Ensure that
     "include_linkedin": true
   }
   ```
+  
+- **Start the Application**
+  Use the following command in your terminal to launch the application:
+  ```bash
+  python main.py
+  ```
+- **Verify Successful Launch**
+  After executing the command, Streamlit will initialize the application and display output in your terminal similar to this:
+  ```bash
+  Starting the backend server...
+  Starting Streamlit frontend...
 
-To start your backend API:
-```bash
-python app.py
-```
+    You can now view your Streamlit app in your browser.
 
-### Step 5: Run the Streamlit Frontend
-To launch the frontend:
-```bash
-streamlit run main.py
-```
+    Local URL: http://localhost:8501
+    Network URL: http://192.168.86.250:8501
+
+  [nltk_data] Downloading package punkt to
+  [nltk_data]     /Users/jayeshzambre/nltk_data...
+  [nltk_data]   Package punkt is already up-to-date!
+  * Serving Flask app 'app'
+  * Debug mode: on
+  [nltk_data] Downloading package punkt to
+  [nltk_data]     /Users/jayeshzambre/nltk_data...
+  [nltk_data]   Package punkt is already up-to-date!
+  ```
+  The app will automatically open in your default web browser. If it doesn’t, manually visit http://localhost:8501 in your browser.
+
 
 ### Final Step: Hit the Run Button
 
