@@ -52,9 +52,8 @@ Before proceeding with the installation, please make sure you have the following
 Clone the repository to your local environment and create the virtual environment.
 
 ```bash
-conda create --name jobhunter python=3.10
-conda activate jobhunter
-pip install .
+conda create --name jobsearch python=3.10
+conda activate jobsearch
 ```
 
 ### Step 1: Install Required Libraries
@@ -71,15 +70,17 @@ cp .env-template .env
 ```
 
 ### Step 3: Add required API Key
-### Add Rapid API KEY
+#### Add Rapid API KEY
 Next, open the `.env` file in a text editor and add your Rapid API Key. This key is required for the program to function correctly. If you don't have a Rapid API Key, you can sign up for one [here](https://www.rapidapi.com/).
 
-### Add LinkedIn Credentials
+Additionally, you need to subscribe to the **LinkedIn Job Search API** on RapidAPI. You can do so [here](https://rapidapi.com/jaypat87/api/linkedin-jobs-search). This subscription is necessary to fetch job data from LinkedIn.
+
+
+#### Add LinkedIn Credentials
 Add your LinkedIn email and password to the .env file. These credentials are required to fetch job data directly from LinkedIn. Ensure that your credentials are kept secure and are not shared.
 
 
 ### Step 4: Run the Application
-The Job Recommender NLP application integrates both the frontend and backend functionalities into a single Streamlit app. Follow the steps below to successfully run the application:
 - The API endpoint `/recommend_jobs` is operational.
 - The API processes POST requests with the following JSON payload:
   ```json
@@ -93,7 +94,7 @@ The Job Recommender NLP application integrates both the frontend and backend fun
     "include_linkedin": true
   }
   ```
-  
+The Job Recommender NLP application integrates both the frontend and backend functionalities into a single Streamlit app. Follow the steps below to successfully run the application:
 - **Start the Application**
   Use the following command in your terminal to launch the application:
   ```bash
@@ -109,15 +110,6 @@ The Job Recommender NLP application integrates both the frontend and backend fun
 
     Local URL: http://localhost:8501
     Network URL: http://192.168.86.250:8501
-
-  [nltk_data] Downloading package punkt to
-  [nltk_data]     /Users/jayeshzambre/nltk_data...
-  [nltk_data]   Package punkt is already up-to-date!
-  * Serving Flask app 'app'
-  * Debug mode: on
-  [nltk_data] Downloading package punkt to
-  [nltk_data]     /Users/jayeshzambre/nltk_data...
-  [nltk_data]   Package punkt is already up-to-date!
   ```
   The app will automatically open in your default web browser. If it doesn’t, manually visit http://localhost:8501 in your browser.
 
