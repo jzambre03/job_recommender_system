@@ -34,9 +34,8 @@ The **Job Recommender System** helps users upload their resumes and find jobs ta
   - **`PyPDF2`**: For extracting text content from PDF resumes.
 
 
-# Installation Guide
-
-📋 This guide will walk you through the installation process for the program. Please follow the steps below to ensure a successful installation.
+# Installation Guide📋 
+This guide will walk you through the installation process for the program. Please follow the steps below to ensure a successful installation.
 
 ## Setup and Instructions
 
