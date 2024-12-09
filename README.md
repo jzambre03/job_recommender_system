@@ -15,7 +15,7 @@ The **Job Recommender System** helps users upload their resumes and find jobs ta
 ![Job Search Results Filtering](images/Picture1.png)
 
 ### Upload Resume for AI Analysis
-![Resume Upload](images/Picture2.jpg)
+![Resume Upload](images/Picture2.png)
 
 ### Highly Configurable Job Searching 🧐
 ![Job Search](images/Picture3.png)
