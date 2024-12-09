@@ -52,9 +52,8 @@ Before proceeding with the installation, please make sure you have the following
 Clone the repository to your local environment and create the virtual environment.
 
 ```bash
-conda create --name jobhunter python=3.10
-conda activate jobhunter
-pip install .
+conda create --name jobsearch python=3.10
+conda activate jobsearch
 ```
 
 ### Step 1: Install Required Libraries
