@@ -80,19 +80,7 @@ Add your LinkedIn email and password to the .env file. These credentials are req
 
 
 ### Step 4: Run the Application
-- The API endpoint `/recommend_jobs` is operational.
-- The API processes POST requests with the following JSON payload:
-  ```json
-  {
-    "resume": "<resume_text>",
-    "job_title": "<job_title>",
-    "location": "<job_location>",
-    "days_old": <number_of_days>,
-    "num_pages": <number_of_pages>,
-    "include_indeed": true,
-    "include_linkedin": true
-  }
-  ```
+
 The Job Recommender NLP application integrates both the frontend and backend functionalities into a single Streamlit app. Follow the steps below to successfully run the application:
 - **Start the Application**
   Use the following command in your terminal to launch the application:
@@ -112,6 +100,19 @@ The Job Recommender NLP application integrates both the frontend and backend fun
   ```
   The app will automatically open in your default web browser. If it doesn’t, manually visit http://localhost:8515 in your browser.
 
+- The API endpoint `/recommend_jobs` is operational.
+- The API processes POST requests with the following JSON payload:
+  ```json
+  {
+    "resume": "<resume_text>",
+    "job_title": "<job_title>",
+    "location": "<job_location>",
+    "days_old": <number_of_days>,
+    "num_pages": <number_of_pages>,
+    "include_indeed": true,
+    "include_linkedin": true
+  }
+  ```
 
 ### Final Step: Hit the Run Button
 
