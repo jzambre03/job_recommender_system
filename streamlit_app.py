@@ -98,4 +98,3 @@ if st.button("Find Jobs"):
 
         except Exception as e:
             st.error(f"Error occurred: {str(e)}")
-

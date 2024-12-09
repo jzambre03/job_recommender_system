@@ -97,4 +97,4 @@
 #                 st.error(f"Failed to fetch jobs: {response.status_code}")
 
 #         except Exception as e:
-#             st.error(f"Error occurred: {str(e)}")
+#             st.error(f"Error occurred: {str(e)}") 

@@ -222,5 +222,3 @@ def scrape_linkedin_jobs(search_term, location, page = 1):
 
 
     return jobs_list
-    
-    
