@@ -100,8 +100,7 @@ The Job Recommender NLP application integrates both the frontend and backend fun
   ```
   The app will automatically open in your default web browser. If it doesn’t, manually visit http://localhost:8515 in your browser.
 
-- The API endpoint `/recommend_jobs` is operational.
-- The API processes POST requests with the following JSON payload:
+- The API endpoint `/recommend_jobs` is operational. The API processes POST requests with the following JSON payload:
   ```json
   {
     "resume": "<resume_text>",
