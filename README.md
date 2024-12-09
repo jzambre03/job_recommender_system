@@ -151,3 +151,4 @@ If you encounter any issues during the installation process, please refer to the
 - Add support for additional job sources like Monster and Glassdoor.
 - Integrate a progress bar for job search.
 - Enhance similarity scoring with advanced NLP models like BERT.
+
