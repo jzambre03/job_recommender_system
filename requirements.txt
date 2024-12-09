@@ -10,3 +10,5 @@ scikit-learn
 pandas
 PyPDF2
 python-dotenv
+
+
